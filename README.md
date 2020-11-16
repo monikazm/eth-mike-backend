@@ -7,5 +7,11 @@ This version supports ETH Mike #1, #2 and #3 and is only compatible with front-e
 ## Installation
 During LabView installation, add the `myRIO software bundle` package to the installation.
 
-## LabView
+## LabView Programming
 You can find a good introduction to LabView [here](https://youtu.be/ZHNlKyYzrPE).
+
+## How to run or deploy the code
+This is described [here](Docs/HowToRunTheLabviewProgram.md).
+
+## How to support new Hardware 
+This is described [here](Docs/HowToSupportNewMikeHardwareInLabviewCode.md).
