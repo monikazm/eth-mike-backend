@@ -5,7 +5,7 @@ This version supports ETH Mike #1, #2 and #3 and is only compatible with front-e
 **Please make sure the correct robot model is selected before building/deploying** (at the left end of the MAIN_All_In_One.vi diagram).
 
 ## Installation
-During LabView installation, add the `myRIO software bundle` package to the installation.
+During LabView installation, add the `myRIO software bundle` or select `Real-Time module` & `myRIO toolkit` package to the installation. If the installation crashes during the installation of the VI package manager, try this tip [here](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000ww5ZCAQ&l=de-CH).
 
 ## LabView Programming
 You can find a good introduction to LabView [here](https://youtu.be/ZHNlKyYzrPE).
