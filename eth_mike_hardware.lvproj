@@ -1,10 +1,10 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="19008000">
-	<Property Name="varPersistentID:{09024DE1-697C-44F1-84C7-4DAD31940387}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/error out</Property>
-	<Property Name="varPersistentID:{168170F1-A758-4315-AB80-3A22E50D4B90}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/elapsed time (ms)</Property>
-	<Property Name="varPersistentID:{3ABA2744-C441-4FE9-9E6F-D839602665CA}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/reset</Property>
-	<Property Name="varPersistentID:{74AF434B-A65C-463A-9238-7CABC7720869}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/error in</Property>
-	<Property Name="varPersistentID:{D9102986-362D-4A00-80C3-E8ED146247A0}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/reset mode</Property>
+	<Property Name="varPersistentID:{1D9B3F13-4891-4BB6-96AA-D27B1FFE5219}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/error out</Property>
+	<Property Name="varPersistentID:{41CD57D1-AA21-4A5B-86F3-2383008EA2F8}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/elapsed time (ms)</Property>
+	<Property Name="varPersistentID:{6BB9B470-C215-4D5C-94C0-0D45C813BF4C}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/error in</Property>
+	<Property Name="varPersistentID:{6BD69051-F5D7-42E0-B05B-C5192FBE72D8}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/reset mode</Property>
+	<Property Name="varPersistentID:{D5699EE5-3DF6-4541-9874-F45774514CB3}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/reset</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -295,7 +295,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{96D4B662-177D-4E1D-97AB-2809DE3DAD67}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">62</Property>
+				<Property Name="Bld_version.build" Type="Int">61</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
