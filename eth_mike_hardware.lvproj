@@ -105,6 +105,9 @@ AddOutputFilter chunkFilter
 		<Item Name="All_In_One" Type="Folder" URL="../All_In_One">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
+		<Item Name="PID Tuning" Type="Folder" URL="../PID Tuning">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
 		<Item Name="Chassis" Type="myRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">fpga</Property>
 			<Property Name="crio.ResourceID" Type="Str">RIO0</Property>
