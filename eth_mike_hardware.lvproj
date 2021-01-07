@@ -1,10 +1,10 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="19008000">
-	<Property Name="varPersistentID:{1D9B3F13-4891-4BB6-96AA-D27B1FFE5219}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/error out</Property>
-	<Property Name="varPersistentID:{41CD57D1-AA21-4A5B-86F3-2383008EA2F8}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/elapsed time (ms)</Property>
-	<Property Name="varPersistentID:{6BB9B470-C215-4D5C-94C0-0D45C813BF4C}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/error in</Property>
-	<Property Name="varPersistentID:{6BD69051-F5D7-42E0-B05B-C5192FBE72D8}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/reset mode</Property>
-	<Property Name="varPersistentID:{D5699EE5-3DF6-4541-9874-F45774514CB3}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/reset</Property>
+	<Property Name="varPersistentID:{0B7BF50C-0CEB-413E-80A4-D67E395D0DC8}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/error out</Property>
+	<Property Name="varPersistentID:{117F87FB-55B5-40B7-8663-F2761D5C981E}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/reset mode</Property>
+	<Property Name="varPersistentID:{650AF965-A67A-4B79-8C62-462833C31D92}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/elapsed time (ms)</Property>
+	<Property Name="varPersistentID:{7E97776A-33AD-4BAF-8932-95CE1F5D288A}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/reset</Property>
+	<Property Name="varPersistentID:{B1269891-6650-4413-9610-67EDA4DF5C63}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/error in</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
