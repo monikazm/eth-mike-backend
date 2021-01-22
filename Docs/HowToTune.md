@@ -45,7 +45,7 @@ It can be used both for tuning the tachometer parameters as well as the PID para
 
 6. Use the provided graphs to tune the controller until a good performance is reached. The goal is to have a smooth movement and little overshoot. It is possible to store separate PID values for min jerk trajectories and for sinusoidal trajectories, but it is likely that the same values can be used for both types of trajectories.
    
-   Make sure you know how to tune a PID controller before starting. Good practice when tuning from scratch: Start with p-part, Add some d-part to damp the oscillation, Add i-part until static errors are removed.
+   Make sure you know how to tune a PID controller before starting. Good practice when tuning from scratch: Start with p-part, Add some d-part to damp the oscillation, Add i-part until static errors are removed. An concrete Example can be found [here](Tuning_Example.docx).
 
 7. Write down all PID values and store them in [min_jerk_params.vi](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Shared%20VIs/ModelSpecific/min_jerk_params.vi) and [sine_params.vi](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Shared%20VIs/ModelSpecific/sine_params.vi). Make sure to save it under the right MIKE version.
 
