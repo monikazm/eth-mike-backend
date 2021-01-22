@@ -1,9 +1,9 @@
 # Tuning of ETH MIKE
 
 Use the [PID_Tuning.vi](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/PID%20Tuning/PID_Tuning.vi) to tune a new MIKE or finetune an existing MIKE.
-It can be used both for tuning the tachometer parameters as well as the PID parameter.
+It can be used both for finding the correct tachometer parameters as well as tuning PID parameters.
 
-- Before running the VI, choose the corrrect MIKE version as shown in the Block Diagram view. For a new Mike version follow this [instruction](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Docs/HowToSupportNewMikeHardwareInLabviewCode.md).
+- Before running the VI, choose the correct MIKE version as shown in the Block Diagram view. For a new MIKE version follow this [instruction](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Docs/HowToSupportNewMikeHardwareInLabviewCode.md). Start the tuning procedure of a new MIKE by adding a new MIKE version!
 
 ![HowToSupportNewMikeHardwareInLabviewCode](img/HowToSupportNewMikeHardwareInLabviewCode_fig1.png)
 
@@ -27,7 +27,7 @@ It can be used both for tuning the tachometer parameters as well as the PID para
 
 ![Image off good and bad example]()
 
-4. Write down both values `Offset [V]` and 'Gain [deg/sV]' and stop the `PID_tuning.VI`. Write the tachometer parameter file into the [parameter file](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Shared%20VIs/ModelSpecific/Tacho2Velocity_params.vi). Make sure to save it for the correct MIKE version only. After this the correct tachometer values will be automatically loaded once the `PID_Tuning.vi` is started.
+4. Write down both values `Offset [V]` and `Gain [deg/sV]` and stop the `PID_tuning.VI`. Write the tachometer parameter file into the [parameter file](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Shared%20VIs/ModelSpecific/Tacho2Velocity_params.vi). Make sure to save it for the correct MIKE version only. After this step, the correct tachometer values will be automatically loaded once the `PID_Tuning.vi` is started.
 
 ### PID parameter tuning
 
@@ -37,7 +37,7 @@ It can be used both for tuning the tachometer parameters as well as the PID para
 
 2. In case you want to adjust the current tuning, you can load the current tuning by selecting the correct MIKE version an press `Load tuning parameters`.
 
-3. Tuning values can be adjusted in the `PID Settings`. It is recommend to not adjust those values while the controller is active, as this might lead to instabilities.
+3. Tuning values can be adjusted in the `PID Settings`. It is recommended not to adjust those values while the controller is active, as this might lead to instabilities.
 
 4. Different trajectory types can be chosen in the `Trajectory Type` dropdown menu (MinJerkTrajectory, Ramp, Sinus). The duration and size of the trajectory can be selected as well.
 
