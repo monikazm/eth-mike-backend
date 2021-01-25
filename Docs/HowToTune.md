@@ -3,19 +3,19 @@
 Use the [PID_Tuning.vi](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/PID%20Tuning/PID_Tuning.vi) to tune a new MIKE or finetune an existing MIKE.
 It can be used both for finding the correct tachometer parameters as well as tuning PID parameters.
 
-- Before running the VI, choose the correct MIKE version as shown in the Block Diagram view. For a new MIKE version follow this [instruction](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Docs/HowToSupportNewMikeHardwareInLabviewCode.md). Start the tuning procedure of a new MIKE by adding a new MIKE version!
-
-![HowToSupportNewMikeHardwareInLabviewCode](img/HowToSupportNewMikeHardwareInLabviewCode_fig1.png)
-
 - When the VI is started, the tachometer parameter from the selected MIKE Model are loaded and the PID parameters are set to 0.
  
 ![Image that shows the different options]()
 
-- It is possible to record all relevant data at any time. This can be done by entering a non existing file name into the `TDMS Storage File Input` field and press the `Save data?` button. The logging of the data is either stopped by clicking again on `Save data?` or by stopping the whole program. The data can be downloaded from the MyRIO from `http://172.22.11.2/files/media/sda1/`. (it is convenient to use `Map network drive` in the Windows file explorer). TDMS files can be opened by Excel when Labview is installed.
+- It is possible to record all relevant data at any time. This can be done by entering a non existing file name into the `TDMS Storage File Input` field and press the `Save data?` button. The logging of the data is either stopped by clicking again on `Save data?` or by stopping the whole program. The data can be downloaded from the MyRIO from `http://172.22.11.2/files/media/sda1/`. (it is convenient to use `Map network drive` in the Windows file explorer, login: admin, password: admin). TDMS files can be opened by Excel when Labview is installed.
 
-- Before the controller can be tuned, the tachometer parameter have to be tuned, so that the velocity information used by the controller is correct.
- 
-### Tuning
+- Before the PID controller can be tuned, the tachometer parameters have to be tuned, so that the velocity information used by the controller is correct.
+
+### Tachometer parameters
+
+0. **Before running the VI, choose the correct MIKE version** as shown in the Block Diagram view. Start the tuning procedure of a new MIKE by adding a new MIKE version, see [instruction](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Docs/HowToSupportNewMikeHardwareInLabviewCode.md). 
+
+![HowToSupportNewMikeHardwareInLabviewCode](img/HowToSupportNewMikeHardwareInLabviewCode_fig1.png)
 
 1. Run the `PID_Tuning.vi`.
 
@@ -33,19 +33,23 @@ It can be used both for finding the correct tachometer parameters as well as tun
 
 **Attention**: While tuning the controller, **keep the emergency stop near you.** Wrong parameter values could lead to instabilities. It is best to cushion the mechanical end stops to not damage the load cell in case of an instability. 
 
+0. **Before running the VI, choose the correct MIKE version** as shown in the Block Diagram view. Start the tuning procedure of a new MIKE by adding a new MIKE version, see [instruction](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Docs/HowToSupportNewMikeHardwareInLabviewCode.md). 
+
+![HowToSupportNewMikeHardwareInLabviewCode](img/HowToSupportNewMikeHardwareInLabviewCode_fig1.png)
+
 1. Run the `PID_Tuning.vi`.
 
-2. In case you want to adjust the current tuning, you can load the current tuning by selecting the correct MIKE version an press `Load tuning parameters`.
+2. In case you want to adjust the current tuning, you can load the current tuning by selecting the correct MIKE version an press `Load tuning parameters`. Skip this on a new Mike Hardware.
 
 3. Tuning values can be adjusted in the `PID Settings`. It is recommended not to adjust those values while the controller is active, as this might lead to instabilities.
 
-4. Different trajectory types can be chosen in the `Trajectory Type` dropdown menu (MinJerkTrajectory, Ramp, Sinus). The duration and size of the trajectory can be selected as well.
+4. Different trajectory types can be chosen in the `Trajectory Type` dropdown menu (minJerkTrajectory, ramp, sine). The duration and size of the trajectory can be selected as well.
 
 5. The trajectory is executed when the `Run` button is pressed. Once the trajectory is finished, the controller stays active and keeps the endeffector at the target position. To disable the controller again, press 'Run' again. The endeffector can now be moved freely again.
 
 6. Use the provided graphs to tune the controller until a good performance is reached. The goal is to have a smooth movement and little overshoot. It is possible to store separate PID values for min jerk trajectories and for sinusoidal trajectories, but it is likely that the same values can be used for both types of trajectories.
    
-   Make sure you know how to tune a PID controller before starting. Good practice when tuning from scratch: Start with p-part, Add some d-part to damp the oscillation, Add i-part until static errors are removed. An concrete Example can be found [here](Tuning_Example.docx).
+   Make sure you know how to tune a PID controller before starting. Good practice when tuning from scratch on a new MIKE hardware: Start with p-part, Add some d-part to damp the oscillation, Add i-part until static errors are removed. An concrete Example can be found [here](Tuning_Example.docx).
 
 7. Write down all PID values and store them in [min_jerk_params.vi](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Shared%20VIs/ModelSpecific/min_jerk_params.vi) and [sine_params.vi](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Shared%20VIs/ModelSpecific/sine_params.vi). Make sure to save it under the right MIKE version.
 
