@@ -298,7 +298,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{96D4B662-177D-4E1D-97AB-2809DE3DAD67}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">61</Property>
+				<Property Name="Bld_version.build" Type="Int">62</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
