@@ -5,7 +5,9 @@ This version supports ETH Mike #1, #2, #3, #4 and #5 and is only compatible with
 **Please make sure the correct robot model is selected before building/deploying** (at the left end of the MAIN_All_In_One.vi diagram).
 
 ## Installation
-Download and install LabVIEW myRIO Software Bundle Version 2019 from [here](https://www.ni.com/en-us/support/downloads/software-products/download.labview-myrio-software-bundle.html#305936). The access code is: D13M26195.  
+Follow the installation instructions [here](Docs/Installation).
+
+Alternatively download and install LabVIEW myRIO Software Bundle Version 2019 from [here](https://www.ni.com/en-us/support/downloads/software-products/download.labview-myrio-software-bundle.html#305936). The access code is: D13M26195.  
 During LabView installation, add the `myRIO software bundle` or select `Real-Time module` & `myRIO toolkit` package to the installation. If the installation crashes during the installation of the VI package manager, try this tip [here](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000ww5ZCAQ&l=de-CH).
 
 ## LabView Programming

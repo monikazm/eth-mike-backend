@@ -12,9 +12,6 @@
 *.so.*
 *.dylib
 
-# Executables
-*.exe
-
 # Metadata
 *.aliases
 *.lvlps
