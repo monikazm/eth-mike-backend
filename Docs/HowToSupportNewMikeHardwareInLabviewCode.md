@@ -1,6 +1,6 @@
 ### How to support new Mike Harware in the LabView code
 
-1. [Open the main `MAIN_All_In_One` labview program](HowToOpenMainLabviewProgram.md)
+1. [Open the main `Main.vi` labview program](HowToOpenMainLabviewProgram.md)
 
 2. Navigate to the part of the Block Diagram where the ETH Mike can be selected. See picture.
 3. 
