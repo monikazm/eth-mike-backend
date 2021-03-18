@@ -1,10 +1,10 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="19008000">
-	<Property Name="varPersistentID:{0B7BF50C-0CEB-413E-80A4-D67E395D0DC8}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/error out</Property>
-	<Property Name="varPersistentID:{117F87FB-55B5-40B7-8663-F2761D5C981E}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/reset mode</Property>
-	<Property Name="varPersistentID:{650AF965-A67A-4B79-8C62-462833C31D92}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/elapsed time (ms)</Property>
-	<Property Name="varPersistentID:{7E97776A-33AD-4BAF-8932-95CE1F5D288A}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/reset</Property>
-	<Property Name="varPersistentID:{B1269891-6650-4413-9610-67EDA4DF5C63}" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi/Elapsed Timer/error in</Property>
+	<Property Name="varPersistentID:{3CCE4914-A12A-49C4-8C15-5B4455C58664}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset</Property>
+	<Property Name="varPersistentID:{6A1517AB-CB2A-42E3-B7DB-4E303DEB0298}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error out</Property>
+	<Property Name="varPersistentID:{847F9281-2524-4F62-97A6-DF8EAC1A8476}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/elapsed time (ms)</Property>
+	<Property Name="varPersistentID:{C5E0E4D5-6FCB-402D-83C9-12241FB73DAF}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset mode</Property>
+	<Property Name="varPersistentID:{E190FF20-83BD-42AF-8A6D-AB6A931AF173}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error in</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -102,10 +102,10 @@ AddOutputFilter chunkFilter
 		<Item Name="Shared VIs" Type="Folder" URL="../Shared VIs">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="All_In_One" Type="Folder" URL="../All_In_One">
+		<Item Name="PID Tuning" Type="Folder" URL="../PID Tuning">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="PID Tuning" Type="Folder" URL="../PID Tuning">
+		<Item Name="Main" Type="Folder" URL="../Main">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Chassis" Type="myRIO Chassis">
@@ -240,7 +240,6 @@ AddOutputFilter chunkFilter
 				<Item Name="NI_PID_pid.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/control/pid/NI_PID_pid.lvlib"/>
 				<Item Name="LVNumericRepresentation.ctl" Type="VI" URL="/&lt;vilib&gt;/numeric/LVNumericRepresentation.ctl"/>
 				<Item Name="roboRIO v1.0 Read Encoder.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/roboRIO v1.0/Encoder/vis/roboRIO v1.0 Read Encoder.vi"/>
-				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
@@ -272,6 +271,7 @@ AddOutputFilter chunkFilter
 				<Item Name="ELVIS III v1.0 Configure IO.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/ELVIS III v1.0/Resource Manager/vis/ELVIS III v1.0 Configure IO.vi"/>
 				<Item Name="ELVIS III IO Config FPGA Reference.ctl" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/ELVIS III v1.0/Resource Manager/typedefs/ELVIS III IO Config FPGA Reference.ctl"/>
 				<Item Name="ELVIS III v1.0 Shutdown Encoder.vi" Type="VI" URL="/&lt;vilib&gt;/myRIO/Common/Instrument Driver Framework/ELVIS III v1.0/Encoder/vis/ELVIS III v1.0 Shutdown Encoder.vi"/>
+				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
 			</Item>
 			<Item Name="NiFpgaLv.dll" Type="Document" URL="NiFpgaLv.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -279,7 +279,7 @@ AddOutputFilter chunkFilter
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
-			<Item Name="All In One RT Application" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
+			<Item Name="Main Application" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
 				<Property Name="App_INI_aliasGUID" Type="Str">{015C3FF1-D2D5-44E3-A976-80B3832A0BFD}</Property>
 				<Property Name="App_INI_GUID" Type="Str">{39E9244F-FD4E-4F01-9B88-5CA54E2F4CC8}</Property>
@@ -287,18 +287,18 @@ AddOutputFilter chunkFilter
 				<Property Name="App_winsec.description" Type="Str">http://www.ETH.com</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
 				<Property Name="Bld_buildCacheID" Type="Str">{5563ED4E-5C6D-4659-A25C-9F793498997F}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">All In One RT Application</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Main Application</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/All In One RT Application</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/NI_AB_TARGETNAME/Main Application</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_postActionVIID" Type="Ref">/My Computer/Post-Build Action.vi</Property>
 				<Property Name="Bld_preActionVIID" Type="Ref">/My Computer/Pre-Build Action.vi</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{96D4B662-177D-4E1D-97AB-2809DE3DAD67}</Property>
 				<Property Name="Bld_targetDestDir" Type="Path">/home/lvuser/natinst/bin</Property>
-				<Property Name="Bld_version.build" Type="Int">62</Property>
+				<Property Name="Bld_version.build" Type="Int">63</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">startup.rtexe</Property>
 				<Property Name="Destination[0].path" Type="Path">/home/lvuser/natinst/bin/startup.rtexe</Property>
@@ -310,41 +310,28 @@ AddOutputFilter chunkFilter
 				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyProperties" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{C732F209-34AF-4E25-AE69-F76FBD23D8FC}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{95EC4949-C3C1-43E3-B9BD-FDB1C8C30552}</Property>
 				<Property Name="Source[0].properties[0].type" Type="Str">Allow debugging</Property>
 				<Property Name="Source[0].properties[0].value" Type="Bool">false</Property>
 				<Property Name="Source[0].propertiesCount" Type="Int">1</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].Container.applyInclusion" Type="Bool">true</Property>
+				<Property Name="Source[1].Container.applyProperties" Type="Bool">true</Property>
 				<Property Name="Source[1].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/States</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">Include</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/NI-myRIO-1900-0309c43e/Shared VIs</Property>
+				<Property Name="Source[1].properties[0].type" Type="Str">Allow debugging</Property>
+				<Property Name="Source[1].properties[0].value" Type="Bool">false</Property>
+				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
 				<Property Name="Source[1].type" Type="Str">Container</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One/MAIN_All_In_One.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi</Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
-				<Property Name="Source[3].Container.applyProperties" Type="Bool">true</Property>
-				<Property Name="Source[3].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[3].itemID" Type="Ref">/NI-myRIO-1900-0309c43e/Shared VIs</Property>
-				<Property Name="Source[3].properties[0].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[3].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[3].propertiesCount" Type="Int">1</Property>
-				<Property Name="Source[3].type" Type="Str">Container</Property>
-				<Property Name="Source[4].Container.applyProperties" Type="Bool">true</Property>
-				<Property Name="Source[4].Container.depDestIndex" Type="Int">0</Property>
-				<Property Name="Source[4].itemID" Type="Ref">/NI-myRIO-1900-0309c43e/All_In_One</Property>
-				<Property Name="Source[4].properties[0].type" Type="Str">Allow debugging</Property>
-				<Property Name="Source[4].properties[0].value" Type="Bool">false</Property>
-				<Property Name="Source[4].propertiesCount" Type="Int">1</Property>
-				<Property Name="Source[4].type" Type="Str">Container</Property>
-				<Property Name="SourceCount" Type="Int">5</Property>
+				<Property Name="SourceCount" Type="Int">3</Property>
 				<Property Name="TgtF_companyName" Type="Str">ETH</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">All In One RT Application</Property>
-				<Property Name="TgtF_internalName" Type="Str">All In One RT Application</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Main Application</Property>
+				<Property Name="TgtF_internalName" Type="Str">Main Application</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2019 ETH</Property>
-				<Property Name="TgtF_productName" Type="Str">All In One RT Application</Property>
+				<Property Name="TgtF_productName" Type="Str">Main Application</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{7C050B7D-ACF6-4DCE-A917-A9EAEE2E46AF}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">startup.rtexe</Property>
 			</Item>
