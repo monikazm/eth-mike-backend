@@ -1,10 +1,10 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="19008000">
-	<Property Name="varPersistentID:{3CCE4914-A12A-49C4-8C15-5B4455C58664}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset</Property>
-	<Property Name="varPersistentID:{6A1517AB-CB2A-42E3-B7DB-4E303DEB0298}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error out</Property>
-	<Property Name="varPersistentID:{847F9281-2524-4F62-97A6-DF8EAC1A8476}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/elapsed time (ms)</Property>
-	<Property Name="varPersistentID:{C5E0E4D5-6FCB-402D-83C9-12241FB73DAF}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset mode</Property>
-	<Property Name="varPersistentID:{E190FF20-83BD-42AF-8A6D-AB6A931AF173}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error in</Property>
+	<Property Name="varPersistentID:{B6DAD128-59F9-44AD-AF75-788F90F2D69A}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error out</Property>
+	<Property Name="varPersistentID:{C965A3E7-3D43-447D-8361-788EF1279E23}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset mode</Property>
+	<Property Name="varPersistentID:{D47C8A74-526D-41EC-8DBF-66E18B3DECD6}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/elapsed time (ms)</Property>
+	<Property Name="varPersistentID:{D9B6A503-7985-464A-9E71-2985D9578C0A}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error in</Property>
+	<Property Name="varPersistentID:{F635723C-30E0-42F4-B382-0D2D530D83DA}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -277,6 +277,9 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
+			<Item Name="N_to_Nm.vi" Type="VI" URL="../../../Labview/Perturbation_Task_and_ImpCs/All_In_One 30 Deg V3.15_Uncontrolled/All In One Tasks 30 Degrees/Shared VIs/N_to_Nm.vi"/>
+			<Item Name="User2MotorTorque.vi" Type="VI" URL="../../../Labview/Perturbation_Task_and_ImpCs/All_In_One 30 Deg V3.15_Uncontrolled/All In One Tasks 30 Degrees/Shared VIs/User2MotorTorque.vi"/>
+			<Item Name="Nm_to_A.vi" Type="VI" URL="../../../Labview/Perturbation_Task_and_ImpCs/All_In_One 30 Deg V3.15_Uncontrolled/All In One Tasks 30 Degrees/Shared VIs/Nm_to_A.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Main Application" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
