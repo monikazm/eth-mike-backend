@@ -1,10 +1,10 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="19008000">
-	<Property Name="varPersistentID:{B6DAD128-59F9-44AD-AF75-788F90F2D69A}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error out</Property>
-	<Property Name="varPersistentID:{C965A3E7-3D43-447D-8361-788EF1279E23}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset mode</Property>
-	<Property Name="varPersistentID:{D47C8A74-526D-41EC-8DBF-66E18B3DECD6}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/elapsed time (ms)</Property>
-	<Property Name="varPersistentID:{D9B6A503-7985-464A-9E71-2985D9578C0A}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error in</Property>
-	<Property Name="varPersistentID:{F635723C-30E0-42F4-B382-0D2D530D83DA}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset</Property>
+	<Property Name="varPersistentID:{039D770C-11BA-4546-A7CB-880CC6D8FED0}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error in</Property>
+	<Property Name="varPersistentID:{4623D62E-CF34-4238-ACA3-1A8E5C9B1C24}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error out</Property>
+	<Property Name="varPersistentID:{710A70B3-2961-4914-A75A-8896474FC341}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset mode</Property>
+	<Property Name="varPersistentID:{754E258D-EDC0-499B-BBBD-893D724E6A2A}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/elapsed time (ms)</Property>
+	<Property Name="varPersistentID:{A4F05A8F-96B2-48EC-9D8A-885AAA11D70D}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -326,7 +326,7 @@ AddOutputFilter chunkFilter
 				<Property Name="Source[1].propertiesCount" Type="Int">1</Property>
 				<Property Name="Source[1].type" Type="Str">Container</Property>
 				<Property Name="Source[2].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[2].itemID" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi</Property>
+				<Property Name="Source[2].itemID" Type="Ref"></Property>
 				<Property Name="Source[2].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[2].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">3</Property>
