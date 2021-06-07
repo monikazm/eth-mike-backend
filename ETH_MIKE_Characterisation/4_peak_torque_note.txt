@@ -1,0 +1,4 @@
+use the 1_maximum_acceleration test but measure the current consumed from the Motor while performing the test.
+
+use the datasheet (https://www.maxongroup.com/medias/sys_master/root/8881624186910/EN-21-151.pdf) from Maxon motor RE40 and the measured current to culculate the peak torque
+using the highest measured current and the graph from the datasheet, peak torque can be obtained.
