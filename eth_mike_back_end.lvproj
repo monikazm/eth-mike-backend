@@ -126,12 +126,8 @@ AddOutputFilter chunkFilter
 		<Item Name="Main" Type="Folder" URL="../Main">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
-		<Item Name="ETH_MIKE_Characterisation" Type="Folder">
-			<Item Name="0_basic_movement_main.vi" Type="VI" URL="../ETH_MIKE_Characterisation/0_basic_movement_main.vi"/>
-			<Item Name="1_maximum_acceleration_main.vi" Type="VI" URL="../ETH_MIKE_Characterisation/1_maximum_acceleration_main.vi"/>
-			<Item Name="2_static_friction_main.vi" Type="VI" URL="../ETH_MIKE_Characterisation/2_static_friction_main.vi"/>
-			<Item Name="3_dynamic_friction_main.vi" Type="VI" URL="../ETH_MIKE_Characterisation/3_dynamic_friction_main.vi"/>
-			<Item Name="5_kb_plot_main.vi" Type="VI" URL="../ETH_MIKE_Characterisation/5_kb_plot_main.vi"/>
+		<Item Name="ETH_MIKE_Characterisation" Type="Folder" URL="../ETH_MIKE_Characterisation">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Chassis" Type="myRIO Chassis">
 			<Property Name="crio.ProgrammingMode" Type="Str">fpga</Property>
@@ -302,15 +298,7 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="TypeDef_Current_Setting.ctl" Type="VI" URL="../ETH_MIKE_Characterisation/helper_vis/TypeDef_Current_Setting.ctl"/>
-			<Item Name="Value Has Changed String PtByPt.vi" Type="VI" URL="../ETH_MIKE_Characterisation/helper_vis/Value Has Changed String PtByPt.vi"/>
-			<Item Name="TypeDef_Velocity.ctl" Type="VI" URL="../ETH_MIKE_Characterisation/helper_vis/TypeDef_Velocity.ctl"/>
-			<Item Name="Best_Fit_FOAW.vi" Type="VI" URL="../ETH_MIKE_Characterisation/helper_vis/Best_Fit_FOAW.vi"/>
-			<Item Name="Ramp_Trajectory.vi" Type="VI" URL="../ETH_MIKE_Characterisation/helper_vis/Ramp_Trajectory.vi"/>
-			<Item Name="TypeDef_Static_Friction.ctl" Type="VI" URL="../ETH_MIKE_Characterisation/helper_vis/TypeDef_Static_Friction.ctl"/>
-			<Item Name="Ramp_Trajectory_v2.vi" Type="VI" URL="../ETH_MIKE_Characterisation/helper_vis/Ramp_Trajectory_v2.vi"/>
-			<Item Name="PID_Settings.ctl" Type="VI" URL="../ETH_MIKE_Characterisation/helper_vis/PID_Settings.ctl"/>
-			<Item Name="ENPID.vi" Type="VI" URL="../ETH_MIKE_Characterisation/helper_vis/ENPID.vi"/>
+			<Item Name="Ramp_Trajectory_v2.vi" Type="VI" URL="../Shared VIs/Ramp_Trajectory_v2.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Main Application" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
