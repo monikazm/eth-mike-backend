@@ -8,7 +8,6 @@
 from nptdms import TdmsFile # https://nptdms.readthedocs.io/en/stable/
 from matplotlib import pyplot as plt
 import numpy as np
-from collections import Counter
 
 
 # In[2]:
