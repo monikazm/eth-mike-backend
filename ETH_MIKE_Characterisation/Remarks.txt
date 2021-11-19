@@ -1,6 +1,0 @@
-The file MAIN_static_friction.vi can be used to obtain static friction for both CW and CCW movement.
-For CW, select "Current Direction" as positive and start at the very left end of the angular range (i.e. -90 deg).
-For CCW, select "Current Direction" as negative but start at -85 deg AND NOT -90 deg because otherwise the wall is hit.
-This is not a bit issue: put endeffector such that it is at zero position and upload labview script. Don't press "move"
-but manually move the endeffector such that it is at -85 deg. Then re-upload the script again. No the starting position 0 deg
-is set at -85 deg on the physical scale and you can start by pressing "move".

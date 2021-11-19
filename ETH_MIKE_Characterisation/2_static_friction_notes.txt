@@ -1,3 +1,0 @@
-MAIN_static_friction - simple algorthm with just applying current and measuring position change
-MAIN_static_friction_v3 - automatic movement to a specified position + current measurement 
-MAIN_static_friction_v4 - automatic movement for a range of positions of interest (-95:5:95) 

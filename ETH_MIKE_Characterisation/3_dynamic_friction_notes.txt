@@ -1,6 +1,0 @@
-To do with the code: 
-1. Saving data (TDMS) 
-2. Shorter waiting time until I start the ramp - done 
-3. Reset time to zero after each iteration - don't bother with that 
-4. Only time as a indicator (other things were for troubleshooting)
-5. Later if time - add calibration (it is more neccessary in case of static friction measurement) 
