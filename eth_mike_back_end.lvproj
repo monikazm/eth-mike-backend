@@ -298,7 +298,6 @@ AddOutputFilter chunkFilter
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
-			<Item Name="Ramp_Trajectory_v2.vi" Type="VI" URL="../Shared VIs/Ramp_Trajectory_v2.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
 			<Item Name="Main Application" Type="{69A947D5-514E-4E75-818E-69657C0547D8}">
