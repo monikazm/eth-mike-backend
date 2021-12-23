@@ -18,24 +18,7 @@
 		<Item Name="characterisation.vi" Type="VI" URL="../ETH_MIKE_Characterisation/characterisation.vi"/>
 		<Item Name="Post-Build Action.vi" Type="VI" URL="../Build Actions/Post-Build Action.vi"/>
 		<Item Name="Pre-Build Action.vi" Type="VI" URL="../Build Actions/Pre-Build Action.vi"/>
-		<Item Name="Dependencies" Type="Dependencies">
-			<Item Name="angle_limit.vi" Type="VI" URL="../Shared VIs/ModelSpecific/angle_limit.vi"/>
-			<Item Name="DPartVariable.ctl" Type="VI" URL="../Shared VIs/ENPID/DPartVariable.ctl"/>
-			<Item Name="ETHMikeModel.ctl" Type="VI" URL="../Shared VIs/ModelSpecific/ETHMikeModel.ctl"/>
-			<Item Name="Gains.ctl" Type="VI" URL="../Shared VIs/ENPID/Gains.ctl"/>
-			<Item Name="min_jerk_params.vi" Type="VI" URL="../Shared VIs/ModelSpecific/min_jerk_params.vi"/>
-			<Item Name="NonLinearGain.ctl" Type="VI" URL="../Shared VIs/ENPID/NonLinearGain.ctl"/>
-			<Item Name="NonLinearGainParams.ctl" Type="VI" URL="../Shared VIs/ENPID/NonLinearGainParams.ctl"/>
-			<Item Name="OutputRange.ctl" Type="VI" URL="../Shared VIs/ENPID/OutputRange.ctl"/>
-			<Item Name="PID_Settings.ctl" Type="VI" URL="../Shared VIs/ENPID/PID_Settings.ctl"/>
-			<Item Name="ReadOnlyGlobalActions.ctl" Type="VI" URL="../Shared VIs/ModelSpecific/ReadOnlyGlobalActions.ctl"/>
-			<Item Name="safety_range.vi" Type="VI" URL="../Shared VIs/ModelSpecific/safety_range.vi"/>
-			<Item Name="sine_params.vi" Type="VI" URL="../Shared VIs/ModelSpecific/sine_params.vi"/>
-			<Item Name="Tacho2Velocity_params.vi" Type="VI" URL="../Shared VIs/ModelSpecific/Tacho2Velocity_params.vi"/>
-			<Item Name="TF_StrainGauge2Force.vi" Type="VI" URL="../Shared VIs/ModelSpecific/TF_StrainGauge2Force.vi"/>
-			<Item Name="TypeDefTachometerParam.ctl" Type="VI" URL="../Shared VIs/ModelSpecific/TypeDefTachometerParam.ctl"/>
-			<Item Name="VelocityEstimate.ctl" Type="VI" URL="../Shared VIs/ENPID/VelocityEstimate.ctl"/>
-		</Item>
+		<Item Name="Dependencies" Type="Dependencies"/>
 		<Item Name="Build Specifications" Type="Build"/>
 	</Item>
 	<Item Name="NI-myRIO-1900-0309c43e" Type="RT myRIO">
