@@ -1,10 +1,10 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="19008000">
-	<Property Name="varPersistentID:{0F2B14A3-1C40-4D5B-B52F-FD526FCC660D}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset</Property>
-	<Property Name="varPersistentID:{78C2571E-64BD-418E-B87A-A34DCDB958DF}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/elapsed time (ms)</Property>
-	<Property Name="varPersistentID:{8BBF8E36-2CA9-4E2F-9E30-AEBBBB6D8B07}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error in</Property>
-	<Property Name="varPersistentID:{9828677C-E750-40E7-B95D-98CDB28EFA31}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset mode</Property>
-	<Property Name="varPersistentID:{D739A2A1-DA0B-4909-8BD8-0390615C78E6}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error out</Property>
+	<Property Name="varPersistentID:{3CCE4914-A12A-49C4-8C15-5B4455C58664}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset</Property>
+	<Property Name="varPersistentID:{6A1517AB-CB2A-42E3-B7DB-4E303DEB0298}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error out</Property>
+	<Property Name="varPersistentID:{847F9281-2524-4F62-97A6-DF8EAC1A8476}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/elapsed time (ms)</Property>
+	<Property Name="varPersistentID:{C5E0E4D5-6FCB-402D-83C9-12241FB73DAF}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset mode</Property>
+	<Property Name="varPersistentID:{E190FF20-83BD-42AF-8A6D-AB6A931AF173}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error in</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -15,7 +15,6 @@
 		<Property Name="server.vi.callsEnabled" Type="Bool">true</Property>
 		<Property Name="server.vi.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="specify.custom.address" Type="Bool">false</Property>
-		<Item Name="characterisation.vi" Type="VI" URL="../ETH_MIKE_Characterisation/characterisation.vi"/>
 		<Item Name="Post-Build Action.vi" Type="VI" URL="../Build Actions/Post-Build Action.vi"/>
 		<Item Name="Pre-Build Action.vi" Type="VI" URL="../Build Actions/Pre-Build Action.vi"/>
 		<Item Name="Dependencies" Type="Dependencies"/>
@@ -107,9 +106,6 @@ AddOutputFilter chunkFilter
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Main" Type="Folder" URL="../Main">
-			<Property Name="NI.DISK" Type="Bool">true</Property>
-		</Item>
-		<Item Name="ETH_MIKE_Characterisation" Type="Folder" URL="../ETH_MIKE_Characterisation">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Chassis" Type="myRIO Chassis">

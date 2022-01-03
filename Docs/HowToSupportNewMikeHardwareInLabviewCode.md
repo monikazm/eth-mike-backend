@@ -25,11 +25,11 @@
 8. Adjust the parameters for the new added case.
 
 9. Repeat steps 4 to 8 with the other SubVis shown in the picture of step 2.
-   * min_jerk_params.vi ï¿½ parameters of the PID with minimum jerk trajectory
-   * sine_params.vi ï¿½ parameters of the PID with sine wave trajectory
-   * TF_StrainGauge2ForceV2.vi ï¿½ transfer function of voltage to force (requires calibration of the force sensor using weights)
-   * TF_Tacho2VelocityV2.vi ï¿½ transfer function of voltage to velocity (requires calibration of the velocity comparing to the derivative of position from the encoder)
-   * angle_limit.vi ï¿½ this has to do with range of motion of ETH MIKE #1 being smaller than for all other models. Keep the same value as ETH MIKE #2 and above
+   * min_jerk_params.vi – parameters of the PID with minimum jerk trajectory
+   * sine_params.vi – parameters of the PID with sine wave trajectory
+   * TF_StrainGauge2ForceV2.vi – transfer function of voltage to force (requires calibration of the force sensor using weights)
+   * TF_Tacho2VelocityV2.vi – transfer function of voltage to velocity (requires calibration of the velocity comparing to the derivative of position from the encoder)
+   * angle_limit.vi – this has to do with range of motion of ETH MIKE #1 being smaller than for all other models. Keep the same value as ETH MIKE #2 and above
    * safety_limit.vi - this has to do with range of motion of ETH MIKE #1 being smaller than for all other models. Keep the same value as ETH MIKE #2 and above
 
 
