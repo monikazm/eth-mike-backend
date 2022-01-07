@@ -1,10 +1,10 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="19008000">
-	<Property Name="varPersistentID:{1A35EEAB-9574-4957-BB2D-249CA448D283}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset mode</Property>
-	<Property Name="varPersistentID:{2E016B33-63D4-41FF-B08C-56E732242B30}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error out</Property>
-	<Property Name="varPersistentID:{558C6392-0347-4D63-90DC-68591F77B375}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error in</Property>
-	<Property Name="varPersistentID:{DD925573-70C9-4ABD-878F-AF6FA57AFE96}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset</Property>
-	<Property Name="varPersistentID:{F6C0818D-BD07-4760-B501-4B4899F18730}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/elapsed time (ms)</Property>
+	<Property Name="varPersistentID:{06875CF4-D670-4831-95DF-66E1928CB5D9}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset mode</Property>
+	<Property Name="varPersistentID:{1234E2A4-497C-4EC2-886B-766720D4B8BD}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error in</Property>
+	<Property Name="varPersistentID:{192DF491-E421-49FF-80F3-2E61B28F2EBD}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/error out</Property>
+	<Property Name="varPersistentID:{D1B66834-1EF5-4F5F-B602-1684727B7AAE}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/elapsed time (ms)</Property>
+	<Property Name="varPersistentID:{E7633EB8-0F5A-4760-A3DC-B6EFA4805ABE}" Type="Ref">/NI-myRIO-1900-0309c43e/Main/Main.vi/Elapsed Timer/reset</Property>
 	<Item Name="My Computer" Type="My Computer">
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
 		<Property Name="server.control.propertiesEnabled" Type="Bool">true</Property>
@@ -106,6 +106,9 @@ AddOutputFilter chunkFilter
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Main" Type="Folder" URL="../Main">
+			<Property Name="NI.DISK" Type="Bool">true</Property>
+		</Item>
+		<Item Name="ETH_MIKE_Characterisation" Type="Folder" URL="../ETH_MIKE_Characterisation">
 			<Property Name="NI.DISK" Type="Bool">true</Property>
 		</Item>
 		<Item Name="Chassis" Type="myRIO Chassis">
