@@ -1,0 +1,18 @@
+\section{Introduction}
+
+The ETH MIKE is a robotic assessment \& therapy platform for hand proprioceptive and sensorimotor functions \cite{icorr}. Since the initial design of the device was not according to the medical device regulations of Switzerland, the electronics of the system were redesigned \cite{julian}. The new electronics are reduced in cost and size compared to the old version. For this report, the most important difference is the motor. Initially, it was run with 48V but now only 24V. Also the torque constant is reduced from $0.137\frac{Nm}{A}$ to $0.0302\frac{Nm}{A}$, therefore the system needs more current to generate the same mechanical power as in the initial version. More information about the redesign can be found in Julian's report \cite{julian}. The redesigned electronics have not yet been tested and evaluated, which was done for this report.
+
+This document is a description of the characterization for the ETH MIKE, which allows for a comparison of the performance between different devices. Two devices have already been evaluated: ETH MIKE \#3 with the initial design and ETH MIKE \#6 with the redesigned electronics. The different tests are described in the different chapters in the following order: maximum acceleration, static friction, dynamic friction, transparency planes, KB-plot \& virtual wall rendering and position bandwidth.
+
+Detailed Manuals of how to implement the measurements and analysis can also be found in the backend gitlab of ETH MIKE under \emph{eth-mike-back-end\textbackslash ETH\_MI-KE\_Characterisation\textbackslash Doc}. The scripts for Data Analysis can be found in \emph{eth-mike-back-end\textbackslash ETH\_MIKE\_Characterisation\textbackslash Data Analysis}. I wrote the scripts in python, there is always one version as python executable and as jupyter notebook.
+
+I recommend using jupyter-lab, installation instructions can be found under this link: \newline \url{https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html}. \newline It is essential, that python is already installed.
+
+Further python libraries that are needed are:
+\begin{itemize}
+    \item npTDMS: \url{https://nptdms.readthedocs.io/en/stable/}
+    \item Matplotlib: \url{https://matplotlib.org/stable/users/getting_started/index.html#installation-quick-start}
+    \item numpy: \url{https://numpy.org/install/}
+    \item scipy:
+    \url{https://scipy.org/install/}
+\end{itemize}

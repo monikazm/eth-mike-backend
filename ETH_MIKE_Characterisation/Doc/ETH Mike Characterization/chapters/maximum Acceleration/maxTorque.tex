@@ -1,0 +1,17 @@
+\section{Maximum Torque}
+The measurement for the maximum torque is very straightforward. One just takes the measurements of the maximum acceleration test, records the measured current and extracts the largest measured current. By multiplying this current with the torque constant of the motor, the maximum torque can be calculated. The results are summarized in the following table:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+                    & \textbf{MIKE 6} & \textbf{MIKE 3} \\ \hline
+Torque Constant {[}$\frac{Nm}{A}${]} & 0.0302           & 0.137           \\ \hline
+max Torque {[}Nm{]} & 0.312           & 0.847           \\ \hline
+max Current {[}A{]} & 10.331           & 6.179           \\ \hline
+min Torque {[}Nm{]} & -0.293           & -0.858          \\ \hline
+min Current {[}A{]} & -9.695           & -6.265           \\ \hline
+\end{tabular}
+\end{table}
+
+As explained before, the new motor of MIKE \#6 generates less torque, but it sinks more current than the old version. The maximum current, which the motor can consume is set by the ESCON. Currently, the maximum is ca. 10A (as can also be seen in the table). If the torque generation is needed to be higher in the future, it can be adjusted in the settings of ESCON (see \emph{eth-mike-hardware/ETH MIKE/05 Setting up/Set up ESCON}. The overall maximum current at the moment is 12A. This one can also be increased by adding a second power source as Julian described in his report \cite{julian}.
