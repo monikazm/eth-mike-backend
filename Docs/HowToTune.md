@@ -27,7 +27,7 @@ It can be used both for finding the correct tachometer parameters as well as tun
 
 ![Image off good and bad example]()
 
-4. Write down both values `Offset [V]` and `Gain [deg/sV]` and stop the `PID_tuning.VI`. Write the tachometer parameter file into the [parameter file](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Shared%20VIs/ModelSpecific/Tacho2Velocity_params.vi). Make sure to save it for the correct MIKE version only. After this step, the correct tachometer values will be automatically loaded once the `PID_Tuning.vi` is started.
+4. Write down both values `Offset [V]` and `Gain [deg/sV]` and stop the `PID_tuning.VI`. Write the tachometer parameter file into the [parameter file](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Shared%20VIs/ModelSpecific/Tacho2Velocity_params.vi) by opening the block diagram, choosing the correct MIKE model and initialise, entering the value and safe the file. Make sure to save it for the correct MIKE version only. After this step, the correct tachometer values will be automatically loaded once the `PID_Tuning.vi` is started.
 
 ### PID parameter tuning
 
@@ -37,7 +37,7 @@ It can be used both for finding the correct tachometer parameters as well as tun
 
 ![HowToSupportNewMikeHardwareInLabviewCode](img/HowToSupportNewMikeHardwareInLabviewCode_fig1.png)
 
-1. Run the `PID_Tuning.vi`.
+1. Run the `PID_Tuning.vi` (Stop all other instances of the backend beforehand, else the wrong parameters could be displayed).
 
 2. In case you want to adjust the current tuning, you can load the current tuning by selecting the correct MIKE version an press `Load tuning parameters`. Skip this on a new Mike Hardware.
 
@@ -51,7 +51,7 @@ It can be used both for finding the correct tachometer parameters as well as tun
    
    Make sure you know how to tune a PID controller before starting. Good practice when tuning from scratch on a new MIKE hardware: Start with p-part, Add some d-part to damp the oscillation, Add i-part until static errors are removed. An concrete Example can be found [here](Tuning_Example.docx).
 
-7. Write down all PID values and store them in [min_jerk_params.vi](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Shared%20VIs/ModelSpecific/min_jerk_params.vi) and [sine_params.vi](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Shared%20VIs/ModelSpecific/sine_params.vi). Make sure to save it under the right MIKE version.
+7. Write down all PID values and store them in [min_jerk_params.vi](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Shared%20VIs/ModelSpecific/min_jerk_params.vi) and [sine_params.vi](https://gitlab.ethz.ch/RELab/eth-mike/eth-mike-back-end/-/blob/master/Shared%20VIs/ModelSpecific/sine_params.vi) the same way as for the tachometer values. Make sure to save it under the right MIKE version.
 
 ![Image off good and bad example]()
 

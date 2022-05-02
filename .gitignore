@@ -20,6 +20,8 @@
 # End of https://www.toptal.com/developers/gitignore/api/labview
 
 .vs/*
+.vscode/*
+.vscode
 
 # Apple generated files
 *.DS_Store
