@@ -1,0 +1,3 @@
+1. TF MotorCurrentInput.vi & TF MotorCurrentOutput.vi Adjust ”Motor Peak Current” to 10A. In case you change the maximum current in the escon setup, you need to take the new value according to the setup.
+2. min jerk params.vi Adjust the output range to 10 and -10, also according to the escon setup.
+3. Haptic Bump Exercise: Nm_to_A subvi change Torque const. [Nm/A] from 0.137 to 0.0282 (should have been 0.0302 according to the new motor torque constant, but was not strong enough comparing to MIKE 3, hence decreased further by trial and error. 
